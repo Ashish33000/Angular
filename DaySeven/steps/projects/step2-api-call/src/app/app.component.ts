@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserService } from './user.service';
 
 @Component({
   selector: 'app-root',
@@ -9,18 +10,20 @@ import { Component } from '@angular/core';
     <thead>
     <tr>
     <th>Sl#</th>
-    <th>First Name</th>
-    <th>Last Name</th>
+    <th>First_Name</th>
+    <th>Last_Name</th>
     <th>Avtar</th>
     <th>Email</th>
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let user of users">
-    <th>{{user.id}}<th>
-    <td>{{user.first_name}} </td>
+    <tr *ngFor="let user of usersdata.data">
+    <td>{{user.id}}</td>
+    <td>{{user.first_name}}</td>
     <td>{{user.last_name}}</td>
-    <td>{{user.avatar}}</td>
+    <td>
+    <img [src]="user.avatar" [alt]="user.first_name" width="40px">
+    </td>
     <td>{{user.email}}</td>
     </tr>
     </tbody>
@@ -31,5 +34,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Ajax In Angular';
-  users:any=[]
+  usersdata:any={}
+  constructor(private ud:UserService){
+
+  }
+  ngOnInit(){
+    this.ud.getUserData().subscribe(res=>this.usersdata=res)
+  }
 }

@@ -1,0 +1,8 @@
+{
+    "cloudDB":"mongodb+srv://root:root@cluster0.qpbwxp1.mongodb.net/?retryWrites=true&w=majority",
+    "localDB":"mongodb://localhost:27017/product",
+    "port":5050,
+    "host":"localhost"
+   
+
+}
