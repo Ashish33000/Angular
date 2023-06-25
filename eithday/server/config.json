@@ -1,5 +1,5 @@
 {
-    "cloudDB" : "your server connection string comes here",
+    "cloudDB" : "mongodb+srv://root:root@cluster0.qpbwxp1.mongodb.net/masaidb?retryWrites=true&w=majority",
     "localDB" : "mongodb://localhost:27017/masaidb",
     "port" : "5050",
     "host" : "localhost"

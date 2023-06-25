@@ -1,0 +1,3 @@
+ng new steps --create-application=false
+ng g app step1-forms --routing=false --style=css -t -s -S
+ng g c template -t -s --skip-tests=true --flat

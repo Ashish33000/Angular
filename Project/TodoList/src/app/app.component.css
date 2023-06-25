@@ -1,0 +1,31 @@
+.container{
+  border: 2px red solid;
+}
+.row{
+  border: 2px rgb(19, 16, 16) solid;
+}
+.col{
+  border: 2px rgb(16, 19, 16) solid;
+}
+.col-7{
+  border: 1px rgb(65, 9, 155) solid;
+}.w-100{
+  border: 1px rgb(155, 116, 9) solid;
+}
+.col-5{
+  border: 1px rgb(65, 9, 155) solid;
+}
+.col-xl{
+  border: 1px rgb(65, 9, 155) solid;
+}
+.col-sm{
+  border: 1px rgb(65, 9, 155) solid;
+}
+
+.blue{
+  background-color:  rgb(65, 9, 155) ;
+}
+.pink{
+  background-color:  rgb(155, 9, 94) ;
+}
+
